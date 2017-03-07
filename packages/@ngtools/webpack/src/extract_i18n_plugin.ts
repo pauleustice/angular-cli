@@ -174,8 +174,6 @@ export class ExtractI18nPlugin implements Tapable {
           host: this._compilerHost,
           angularCompilerOptions: this._angularCompilerOptions,
           i18nFormat: this._i18nFormat,
-          locale: this._locale,
-          outFile: this._outFile,
 
           readResource: (path: string) => this._resourceLoader.get(path)
         });
