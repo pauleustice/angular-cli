@@ -9,7 +9,9 @@ import { pluginArgs, postcssArgs } from '../../tasks/eject';
 
 const cssnano = require('cssnano');
 const postcssUrl = require('postcss-url');
-const autoprefixer = require('autoprefixer');
+const cssNext = require('postcss-cssnext');
+const cssStats = require('postcss-cssstats');
+const cssBemLinter = require('postcss-bem-linter');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 /**
@@ -66,8 +68,8 @@ export function getStylesConfig(wco: WebpackConfigOptions) {
   urlPlugin[postcssArgs] = postcssUrlOptions;
 
   // PostCSS plugins.
-  const postCssPlugins = [autoprefixer(), urlPlugin].concat(
-    buildOptions.target === 'production' ? [cssnanoPlugin] : []
+  const postCssPlugins = [urlPlugin, cssNext()].concat(
+    buildOptions.target === 'production' ? [cssnanoPlugin] : [cssStats, cssBemLinter]
   );
 
   // determine hashing format
