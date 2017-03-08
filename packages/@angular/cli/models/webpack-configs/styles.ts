@@ -102,6 +102,7 @@ export function getStylesConfig(wco: WebpackConfigOptions) {
   // set base rules to derive final rules from
   const baseRules = [
     { test: /\.css$/, loaders: [] },
+    { test: /\.pcss$/, loaders: ['postcss-loader'] },
     { test: /\.scss$|\.sass$/, loaders: ['sass-loader'] },
     { test: /\.less$/, loaders: ['less-loader'] },
     // stylus-loader doesn't support webpack.LoaderOptionsPlugin properly,
