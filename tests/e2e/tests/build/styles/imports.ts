@@ -13,7 +13,7 @@ export default function () {
   // Disable parts of it in webpack tests.
   const ejected = getGlobalVariable('argv').eject;
 
-  const extensions = ['css', 'scss', 'less', 'styl'];
+  const extensions = ['pcss', 'css', 'scss', 'less', 'styl'];
   let promise = Promise.resolve();
 
   extensions.forEach(ext => {

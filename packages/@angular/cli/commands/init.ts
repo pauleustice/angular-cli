@@ -16,7 +16,7 @@ const InitCommand: any = Command.extend({
     { name: 'skip-commit', type: Boolean, default: false, aliases: ['sc'] },
     { name: 'name', type: String, default: '', aliases: ['n'] },
     { name: 'source-dir', type: String, default: 'src', aliases: ['sd'] },
-    { name: 'style', type: String, default: 'css' },
+    { name: 'style', type: String, default: 'pcss' },
     { name: 'prefix', type: String, default: 'app', aliases: ['p'] },
     { name: 'routing', type: Boolean, default: false },
     { name: 'inline-style', type: Boolean, default: false, aliases: ['is'] },

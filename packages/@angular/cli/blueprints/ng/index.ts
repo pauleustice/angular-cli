@@ -28,7 +28,7 @@ export default Blueprint.extend({
   locals: function(options: any) {
     this.styleExt = options.style === 'stylus' ? 'styl' : options.style;
     if (!options.style) {
-      this.styleExt = CliConfig.getValue('defaults.styleExt') || 'css';
+      this.styleExt = CliConfig.getValue('defaults.styleExt') || 'pcss';
     }
 
     this.version = require(path.resolve(__dirname, '../../package.json')).version;

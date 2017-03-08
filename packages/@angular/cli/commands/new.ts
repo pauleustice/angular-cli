@@ -90,7 +90,7 @@ const NewCommand = Command.extend({
     {
       name: 'style',
       type: String,
-      default: 'css',
+      default: 'pcss',
       description: 'The style file default extension.'
     },
     {

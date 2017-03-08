@@ -1,7 +1,7 @@
 {
-  "name": "@angular/cli",
+  "name": "@angular/cli-with-postcss",
   "version": "1.0.0-rc.1",
-  "description": "CLI tool for Angular",
+  "description": "@angular/cli with additional PostCSS plugin support",
   "main": "packages/@angular/cli/lib/cli/index.js",
   "trackingCode": "UA-8594346-19",
   "bin": {
@@ -28,13 +28,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/angular/angular-cli.git"
+    "url": "https://github.com/pauleustice/angular-cli-with-postcss.git"
   },
   "engines": {
     "node": ">= 6.9.0",
     "npm": ">= 3.0.0"
   },
-  "author": "Angular Authors",
+  "author": "Angular Authors (PostCSS plugins added by Paul Eustice)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/angular/angular-cli/issues"

@@ -127,7 +127,7 @@ export default Blueprint.extend({
   },
 
   locals: function (options: any) {
-    this.styleExt = CliConfig.getValue('defaults.styleExt') || 'css';
+    this.styleExt = CliConfig.getValue('defaults.styleExt') || 'pcss';
 
     options.inlineStyle = options.inlineStyle !== undefined ?
       options.inlineStyle : CliConfig.getValue('defaults.component.inlineStyle');
